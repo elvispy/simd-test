@@ -8,7 +8,7 @@ function saxp!(A::Matrix{Float64}, B::Matrix{Float64}, C::Matrix{Float64})
 end
 
 function saxpsimd!(A::Matrix{Float64}, B::Matrix{Float64}, C::Matrix{Float64})
-    @simd @. A += B*C
+    @. A += B*C
 end
 
 end
